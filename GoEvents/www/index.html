@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <!--
@@ -10,8 +10,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-
+    
     <!-- Required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
@@ -19,33 +18,29 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
-
     <!-- Your app title -->
     <title>My App</title>
-
     <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
-        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
-     -->
-
+    http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+    -->
+    <script src="js/jquery-1.10.2.min.js"></script>
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
-
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/Main.js"></script>
+   
 </head>
-
 <body>
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
     <div class="statusbar-overlay"></div>
-
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
         <div class="content-block">
-            <p>Left panel content goes here</p>
+            <ul id="myDiv"></ul>
         </div>
     </div>
-
     <!-- Views -->
     <div class="views">
         <!-- Your main view, should have "view-main" class -->
@@ -73,7 +68,11 @@
                         <div class="content-block">
                             <p>Page content goes here</p>
                             <!-- Link to another page -->
-                            <a href="about.html">About app</a>
+                            <a href="Events.html">Events</a>
+                            <br/>
+                            <a href="Nyheder.html">Nyheder</a>
+                            <br/>
+                            <a href="Forum.html">Forum</a>
                         </div>
                     </div>
                 </div>
@@ -89,9 +88,11 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="cordova.js"></script>
+    <script src="cordova.js"></script>
+    <
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
-</body>
+    <script src="js/my-app.js"></script>
 
+    
+</body>
 </html>
